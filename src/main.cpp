@@ -1,7 +1,16 @@
 #include <iostream>
 
-int main(void)
+#include "core/global.hpp"
+
+namespace Filip {
+    int Main(int argc, char** args)
+    {
+        std::cout << "Salut din Filip main!" << std::endl;
+        return EXIT_SUCCESS;
+    }
+}
+
+int main(int argc, char** args)
 {
-    std::cout << "Hello, world!\n";
-    return 0;
+    return Filip::Main(argc, args);
 }
